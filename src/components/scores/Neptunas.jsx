@@ -2,9 +2,18 @@ import { useState } from "react";
 
 export function Neptunas() {  
     const [count, setCount] = useState(0);
+    const [history, info]= useState([]);
+    
 
     function updateCount1() {
         setCount(count + 1);
+        info= [
+           {
+            komanda: 'Neptunas',
+            taskai: 1,
+        }
+        ]
+        console.log(updateCount1)
     }
 
     function updateCount2() {

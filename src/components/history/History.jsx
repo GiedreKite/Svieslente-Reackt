@@ -1,4 +1,8 @@
-export function History() {
+import { Neptunas } from "../scores/Neptunas";
+
+export function History(info) {
+    
+    console.log(Neptunas.info)
     return ( 
     <>
         <h4>Švieslentės istorija</h4>
