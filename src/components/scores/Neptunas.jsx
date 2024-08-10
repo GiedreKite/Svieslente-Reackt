@@ -3,6 +3,7 @@ import { useState } from "react";
 export function Neptunas() {  
     const [count, setCount] = useState(0);
     const [team, setTeam] =useState('');
+    let historyNeptunas = [];
     
 
     function updateCount1() {
@@ -19,6 +20,7 @@ export function Neptunas() {
         setCount(count + 3);
         setTeam('Neptunas')
     }
+    historyNeptunas = (team,count)
     return ( <>
             <div className="name Neptunas">
                 <h2>Neptūnas</h2>
@@ -27,7 +29,9 @@ export function Neptunas() {
                 <button className="Neptunas" onClick={updateCount2}>2</button>
                 <button className="Neptunas" onClick={updateCount3}>3</button>
             </div>
-                <div className="" > {team} {count}</div>
+                <div className="" > {team} {count}
+                  {historyNeptunas}
+                </div>
             </>
     );
 }
